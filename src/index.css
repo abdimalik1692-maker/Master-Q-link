@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #0A0A0A;
+    --bg-secondary: #121212;
+    --bg-card: #1A1A1A;
+    --bg-card-hover: #222222;
+    --border-color: #2A2A2A;
+    --gold-primary: #D4AF37;
+    --gold-bright: #F5D76E;
+    --gold-soft: #C9A84C;
+    --gold-glow: rgba(212, 175, 55, 0.15);
+  }
+
+  body {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .font-brand {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Luxury Gold Gradients & Accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0B3 0%, #D4AF37 50%, #AA8010 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #F5D76E 0%, #D4AF37 50%, #B8860B 100%);
+}
+
+.gold-gradient-bg-subtle {
+  background: linear-gradient(135deg, rgba(245, 215, 110, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+}
+
+.gold-border-glow {
+  border-color: #D4AF37;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+}
+
+.card-dark {
+  background-color: #141414;
+  border: 1px solid #242424;
+}
+
+.card-dark:hover {
+  background-color: #1A1A1A;
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+/* Custom Scrollbar for sleek dark experience */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Subtle Shimmer for Gold Badges */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-gold {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.1) 0%, rgba(245, 215, 110, 0.4) 50%, rgba(212, 175, 55, 0.1) 100%);
+  background-size: 200% 100%;
+  animation: goldShimmer 3s infinite linear;
+}
+

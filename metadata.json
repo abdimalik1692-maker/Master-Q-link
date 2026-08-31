@@ -1,0 +1,6 @@
+{
+  "name": "QLINK Ecosystem",
+  "description": "One Platform. All Services. Unified Customer App, Organization Dashboards, and CEO Command Center for Government, Banking, and Healthcare.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
